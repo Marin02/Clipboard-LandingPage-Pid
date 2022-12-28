@@ -1,0 +1,374 @@
+/* Font Family Bai Jamjuree */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main.container {
+    width: 70%;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/bg-header-desktop.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.header .logo__header {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 2rem;
+}
+
+.header__title {
+    margin-bottom: 1rem;
+}
+
+.header__paragraph {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.header__btns, .download__btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn__ios, .btn__mac {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+
+.btn__ios:hover, .btn__mac:hover {
+    transform: scale(1.10);
+    box-shadow: none;
+}
+
+.btn__ios {
+    background: var(--strong-cyan);
+
+    box-shadow: 1px -1px 10px var(--strong-cyan),
+                -1px 1px 10px var(--strong-cyan);
+}
+
+.btn__mac {
+    background: var(--light-blue);
+
+    box-shadow: 1px -1px 10px var(--light-blue),
+                -1px 1px 10px var(--light-blue);
+}
+
+/* Section Snippets */
+.snippets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.snippets__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.snippets__paragraph {
+    color: var(--grayish-blue);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.snippets__content {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.snippets__image {
+    width: 500px;
+}
+
+.snippets__dates {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.quick__title, .icloud__title, .history__title {
+    margin-bottom: .5rem;
+}
+
+.txt {
+    color: var(--grayish-blue);
+}
+
+/* Section Clipboard */
+.clipboard {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+}
+
+.clipboard__title {
+    margin-bottom: 1.5rem;
+}
+
+.clipboard__paragraph {
+    margin-bottom: 1.5rem;
+}
+
+.clipboard__image {
+    width: 800px;
+}
+
+/* Section Workflow */
+.workflow {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.workflow__title {
+    margin-bottom: 1rem;
+}
+
+.workflow__dates {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.img {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 1.5rem;
+}
+
+.text__image {
+    margin-top: -1.5rem;
+}
+
+.box {
+    width: 450px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    line-height: 1.5;
+}
+
+.blacklists__title, .text__title, .preview__title {
+    margin-bottom: 1rem;
+}
+
+.workflow__logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.workflow__logos img {
+    height: 40px;
+    width: 110px;
+}
+
+/* Section Download */
+.download {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.download__title {
+    margin-bottom: 1.5rem;
+}
+
+.download__paragraph {
+    margin-bottom: 2rem;
+}
+
+/* Section Footer */
+.footer {
+    height: 90px;
+    width: 100%;
+    padding: 0 80px;
+    background: rgba(218, 218, 218, 0.293);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.logo__footer {
+    height: 50px;
+}
+
+.footer__items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer__items li a {
+    color: rgb(45, 45, 45);
+    font-weight: 600;
+    font-family: 'Bai Jamjuree', sans-serif;
+    transition: 500ms ease;
+}
+
+.footer__items li a:hover {
+    color: var(--strong-cyan);
+}
+
+.social-media {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-media i {
+    color: rgb(59, 59, 59);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+
+.social-media i:hover {
+    color: var(--strong-cyan);
+}
+
+/* Media Queries Mobile (max-width: 500px) */
+@media (max-width: 620px) {
+    .header {
+        padding-top: 3rem;
+        background-image: url(/images/bg-header-mobile.png);
+    }
+
+    .snippets {
+        margin-top: 4rem;
+    }
+
+    .snippets__content {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .snippets__image {
+        width: 300px;
+    }
+
+    .clipboard__image {
+        width: 300px;
+    }
+
+    .workflow {
+        margin-top: 4rem;
+    }
+
+    .workflow__dates {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+    .workflow__logos {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer {
+        height: 350px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__items {
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Media Queries Tablet (max-width: 920px) */
+@media (max-width: 920px) {
+    .snippets__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .workflow__dates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 0 10px;
+    }
+
+    .footer__items {
+        flex-wrap: nowrap;
+    }
+
+    .footer__items li a {
+        font-size: 12px;
+    }
+
+    .social-media {
+        gap: 1rem;
+    }
+
+    .social-media i {
+        font-size: 15px;
+    }
+
+    .logo__footer {
+        height: 30px;
+    }
+}
+
+
+
+
